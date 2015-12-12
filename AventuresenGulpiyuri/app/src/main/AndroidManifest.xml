@@ -23,7 +23,16 @@
             android:name=".PaginaPrimera"
             android:screenOrientation="landscape" />
         <activity android:name=".JuegoPregunta" />
-        <activity android:name=".PaginaSegunda"></activity>
+        <activity android:name=".PaginaSegunda" />
+        <activity
+            android:name=".PaginaTercera"
+            android:label="@string/title_activity_pagina_tercera"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PaginaCuarta"
+            android:label="@string/title_activity_pagina_cuarta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PaginaQuinta"></activity>
     </application>
 
 </manifest>
