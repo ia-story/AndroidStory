@@ -1,5 +1,6 @@
 package audiovisuales.aventuresengulpiyuri;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,6 +25,11 @@ public class Portada extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void pasaPagina(View view){
+        Intent mIntent= new Intent(Portada.this, PaginaPrimera.class);
+        startActivity(mIntent);
     }
 
 }
