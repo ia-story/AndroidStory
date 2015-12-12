@@ -22,7 +22,8 @@
         <activity
             android:name=".PaginaPrimera"
             android:screenOrientation="landscape" />
-        <activity android:name=".JuegoPregunta"></activity>
+        <activity android:name=".JuegoPregunta" />
+        <activity android:name=".PaginaSegunda"></activity>
     </application>
 
 </manifest>

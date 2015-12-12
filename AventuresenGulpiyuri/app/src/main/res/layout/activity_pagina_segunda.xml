@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/pergamino_medio"
-    tools:context="audiovisuales.aventuresengulpiyuri.JuegoPregunta">
+    tools:context="audiovisuales.aventuresengulpiyuri.PaginaSegunda">
 
     <EditText
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/etPagina1"
-        android:text="@string/primeraPagina"
+        android:text="@string/segundaPaginaTexto"
         android:textSize="57dp"
         android:width="950dp"
         android:layout_centerVertical="true"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:src="@android:drawable/ic_media_next"
-        android:onClick="irAJuego1"
+        android:onClick="irAJuego2"
         android:layout_toEndOf="@id/etPagina1"
         android:layout_toRightOf="@id/etPagina1"
         android:layout_alignBottom="@id/etPagina1"/>
