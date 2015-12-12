@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
+import audiovisuales.aventuresengulpiyuri.Portada;
 import audiovisuales.aventuresengulpiyuri.R;
 
 /**
@@ -29,6 +30,8 @@ public class Utilidades {
         return bConectado;
     }
 
+    /* Diálogo que se mostrará cada vez que se abre una nueva página y no se detecta coe
+     */
     public static void mostrarVentanaErrorDeConexion(Context context) {
         new AlertDialog.Builder(context)
                 .setTitle(R.string.tituloFalloConexion)
@@ -41,4 +44,21 @@ public class Utilidades {
                 .show();
     }
 
+
+    public static void mostrarVentanaLecturaAutomatica(Context context) {
+        new AlertDialog.Builder(context)
+                .setTitle(R.string.activarLecturaAutomatica)
+                .setMessage(R.string.mensajeLecturaAutomatica)
+                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Portada.setLecturaAutomatica(true);
+                    }
+                })
+                .setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int id){
+                        Portada.setLecturaAutomatica(false);
+                    }
+                })
+                .show();
+    }
 }

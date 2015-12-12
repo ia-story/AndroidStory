@@ -8,7 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import util.Utilidades;
+
 public class Portada extends AppCompatActivity {
+
+    private static boolean lecturaAutomatica=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +29,22 @@ public class Portada extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+       Utilidades.mostrarVentanaLecturaAutomatica(this);
     }
 
     public void pasaPagina(View view){
         Intent mIntent= new Intent(Portada.this, PaginaPrimera.class);
         startActivity(mIntent);
+    }
+
+
+    public static void setLecturaAutomatica (boolean activado){
+        lecturaAutomatica=activado;
+    }
+
+    public static boolean getLecturaAutomatica(){
+        return lecturaAutomatica;
     }
 
 }

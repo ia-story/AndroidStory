@@ -5,4 +5,8 @@
     <string name="tituloFalloConexion">Error de conexión</string>
     <string name="mensajeFalloConexion">No se ha podido establecer conexión de red.\n Algunas características pueden no estar disponibles</string>
     <string name="ok">OK</string>
+    <string name="activarLecturaAutomatica">Lectura automática</string>
+    <string name="mensajeLecturaAutomatica">¿Desea activar la lectura automática?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="primeraPagina">Aprovechando'l pocu sol del branu asturianu decidisti date un bañu en Gulpiyuri, non ensin antes entrar nuna de les cueves ente les roques. Nun sabíes lo que podíes atopar y taba bien escuru, asina qu'encendisti la llinterna.</string>
 </resources>
