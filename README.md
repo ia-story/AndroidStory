@@ -1,2 +1,0 @@
-# AndroidStory
-Trabajo de audiovisuales
