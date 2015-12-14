@@ -20,7 +20,12 @@
         android:textSize="57dp"
         android:width="950dp"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btSiguientePortada"
@@ -28,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:src="@android:drawable/ic_media_next"
-        android:onClick="irAFin"
+        android:onClick=""
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
