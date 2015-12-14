@@ -28,7 +28,7 @@ public class PaginaSegunda extends AppCompatActivity implements TextToSpeech.OnI
 
     /* Se sustituye el juego por la siguiente pagina */
     public void irAJuego2(View view){
-        Intent mIntent= new Intent(PaginaSegunda.this, PaginaTercera.class);
+        Intent mIntent= new Intent(PaginaSegunda.this, JuegoPregunta.class);
         startActivity(mIntent);
     }
 
